@@ -1,0 +1,1752 @@
+
+/* Fonts */
+:root {
+	--main-font: 'Roboto', sans-serif;
+
+}
+
+/* Colors */
+:root {
+	--color-default: rgba(27, 28, 30, 0.8);
+	--subheading-color: #4E1028;
+}
+
+/* Smooth scroll behavior */
+:root {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: var(--main-font);
+	color: var(--color-default);
+	padding: 0;
+	margin: 0;
+
+}
+
+
+/*--------------------------------------------------------------
+    Banner section and navbar
+--------------------------------------------------------------*/
+
+.banner_section {
+ background: url(../images/Banner.jpg) no-repeat;
+ background-size: cover !important;
+  
+}
+
+.animated-arrow-img {
+	-webkit-animation: mover 1s infinite alternate;
+	animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+	0% {
+		transform: translate(-50%, 0);
+	}
+
+	100% {
+		transform: translate(-50%, -20px);
+	}
+}
+
+@keyframes mover {
+	0% {
+		transform: translate(-50%, 0);
+	}
+
+	100% {
+		transform: translate(-50%, -20px);
+	}
+}
+
+.logo {
+	height: 83px;
+}
+
+.navbar {
+	padding: 25px 70px;
+}
+
+.navbar .navbar-nav {
+	margin: 0px auto;
+}
+
+.navbar .navbar-nav .nav-item {
+	margin-right: 42px;
+}
+
+.navbar .navbar-nav .nav-item:last-child {
+	margin-right: 0px;
+}
+
+.navbar .navbar-nav .nav-link {
+	color: #F6F6F6;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 0px 0px 10px 0px;
+
+}
+
+.navbar .navbar-nav .nav-link:hover {
+	color: #d0b89c;
+}
+
+.navbar .navbar-nav .nav-item {
+	position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #d0b89c;
+	width: 0%;
+	content: "";
+	height: 1px;
+	transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+	width: 70%;
+}
+
+.search {
+	margin-right: 20px;
+	color: #fff;
+}
+
+.search:hover {
+	color: #d0b89c
+}
+
+.shopping {
+	color: #fff;
+}
+
+.shopping:hover {
+	color: #d0b89c
+}
+
+.banner_section h6 {
+	font-weight: 400;
+	font-size: 24px;
+	color: #fff;
+	margin-top: 350px;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 78px;
+	color: #fff;
+	margin-bottom: 100px;
+
+}
+
+.dwn_arrow {
+	width: 140px;
+	height: 140px;
+	border-radius: 140px;
+	border: 2px dashed #f6f6f6;
+	margin-top: 170px;
+}
+
+.dwn_arrow img {
+	height: 20px;
+	margin-top: 66px;
+	margin-left: 40px;
+}
+
+
+.line_one {
+	border-right: 2px dashed #ffffff;
+	width: 3%;
+	padding: 36px;
+	height: 270px;
+}
+
+
+.banner_texts {
+	padding: 0px 180px;
+}
+
+
+/*--------------------------------------------------------------
+    About section
+--------------------------------------------------------------*/
+
+
+
+.about_section {
+	padding: 150px 180px;
+}
+
+h2 {
+	color: var(--subheading-color);
+	font-weight: 400;
+	font-size: 48px;
+
+}
+
+.about_section p {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 24px;
+}
+
+/*--------------------------------------------------------------
+    Coustom Suit section
+--------------------------------------------------------------*/
+
+
+.Customsuits_section .text_sec {
+	padding: 50px 180px 50px 80px;
+}
+
+.Customsuits_section h2 {
+	margin-top: 100px;
+}
+
+.zoom_box {
+	width: 55%;
+	background-color: #4E1028;
+	position: absolute;
+	left: 21%;
+	padding: 100px;
+	margin-top: 170px;
+
+}
+
+.zoom_box h2 {
+	color: #d0b89c;
+	margin-top: 0px;
+}
+
+.zoom_box p {
+	color: #d0b89c;
+	margin-top: 42px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.zoom_box span {
+	color: #d0b89c;
+	font-weight: 400;
+	font-size: 24px;
+	margin-right: 25px;
+
+}
+
+.btn-1 {
+	background-color: #d0b89c;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+
+.btn-1:hover {
+	background-color: #4E1028;
+}
+
+.angle-rght {
+	height: 24px;
+	margin-top: 10px;
+}
+
+
+/*--------------------------------------------------------------
+    Design section
+--------------------------------------------------------------*/
+
+.design_section {
+	padding: 0px 140px;
+
+}
+
+.scond_border {
+
+	border-left: 2px dashed #d0b89c;
+	padding: 100px;
+}
+
+.third_border {
+	border-left: 2px dashed #d0b89c;
+	padding: 27px;
+	border-radius: 0px 0px 0px 40px;
+	border-bottom: 2px dashed #d0b89c;
+	width: 20%;
+	position: relative;
+	left: -12px;
+	top: 3px;
+	height: 150px;
+}
+
+.round_one {
+	width: 250px;
+	height: 250px;
+	border-radius: 250px;
+	border: 2px dashed #d0b89c;
+	text-align: center;
+	position: relative;
+	left: -13px;
+}
+
+.round_one img {
+	margin-top: 73px;
+}
+
+.fourth_border {
+	height: 150px;
+	border-bottom: 2px dashed #d0b89c;
+	width: 53px;
+	position: relative;
+	left: -13px;
+
+}
+
+.finest_materialdiv {
+	padding: 60px 0px 0px 0px;
+}
+
+.finest_materialdiv p {
+	font-size: 20px;
+	margin-top: 22px;
+}
+
+.fifth_border {
+	padding: 70px;
+	position: relative;
+	top: -35px;
+	width: 83%;
+	border-right: 2px dashed #d0b89c;
+}
+
+.round_two {
+	width: 250px;
+	height: 250px;
+	border-radius: 250px;
+	border: 2px dashed #d0b89c;
+	text-align: center;
+	position: relative;
+	left: 50px;
+	top: -32px;
+}
+
+.round_two img {
+	margin-top: 84px;
+}
+
+.design_perfctiondiv p {
+	font-size: 20px;
+	margin-top: 22px;
+}
+
+.paddingadjust_div {
+	padding-left: 60px;
+}
+
+.sixth_border {
+
+	padding: 65px;
+	position: relative;
+	top: -30px;
+	width: 68%;
+	margin-left: 15%;
+	border-right: 2px dashed #d0b89c;
+	border-bottom: 2px dashed #d0b89c;
+	border-radius: 0px 0px 40px 0px;
+}
+
+.sevnth_border {
+	padding: 60px;
+	position: relative;
+	top: -31px;
+	width: 70%;
+	margin-left: 12%;
+	border-left: 2px dashed #d0b89c;
+	border-radius: 40px 0px 0px 0px;
+
+}
+
+.round_three {
+	width: 250px;
+	height: 250px;
+	border-radius: 250px;
+	border: 2px dashed #d0b89c;
+	text-align: center;
+	position: relative;
+	left: 1px;
+	top: -28px;
+}
+
+
+.round_three img {
+	margin-top: 84px;
+}
+
+.ourshop_div p {
+	font-size: 20px;
+	margin-top: 22px;
+}
+
+.eighth_border {
+	padding: 65px;
+	position: relative;
+	top: -30px;
+	width: 72%;
+	margin-left: 12%;
+	border-left: 2px dashed #d0b89c;
+	border-bottom: 2px dashed #d0b89c;
+	border-radius: 0px 0px 0px 40px;
+}
+
+.nineth_border {
+
+	padding: 80px;
+	position: relative;
+	top: -31px;
+	width: 72%;
+	margin-left: 15%;
+	border-right: 2px dashed #d0b89c;
+	border-radius: 0px 40px 0px 0px;
+	text-align: right;
+
+}
+
+.nineth_border img {
+	position: relative;
+	left: 99px;
+	top: 30px;
+}
+
+
+/*--------------------------------------------------------------
+    Our Business section
+--------------------------------------------------------------*/
+
+.Ourbusiness_section {
+	padding: 75px;
+
+}
+
+
+.image_padding {
+	padding: 5px;
+}
+
+.our_business_h2 {
+	margin-bottom: 50px;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 28px;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+    Our Brands section
+--------------------------------------------------------------*/
+
+
+.Ourbrands_section {
+	padding: 75px;
+
+}
+
+.shopping_images {
+	position: relative;
+	padding: 0px;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #521129e6;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	z-index: 1;
+}
+
+.shopping_images:hover .overlay {
+	height: 100%;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	top: 43%;
+	left: 41%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+.shopping_heading {
+	position: relative;
+	bottom: 53px;
+	right: -10px;
+	font-size: 28px;
+	color: #fff;
+}
+
+.shpimage_bg {
+	height: 365px;
+}
+
+.overly_txt1 {
+
+	font-size: 28px;
+}
+
+.overly_txt2 {
+
+	font-size: 18px;
+}
+
+.btn-3 {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #d0b89c;
+
+
+}
+
+.btn-3 .angle-rght-3 {
+	height: 18px;
+	position: relative;
+	top: -6px;
+	left: -2px;
+}
+
+
+
+/*--------------------------------------------------------------
+    Testimonial section
+--------------------------------------------------------------*/
+
+.testimonial_section {
+
+	padding: 75px;
+}
+
+.testimonial_section p {
+	font-size: 30px;
+}
+
+.testimonial_section .text_name {
+
+	color: #4E1028;
+	font-size: 24px;
+}
+
+
+/*--------------------------------------------------------------
+    Products section
+--------------------------------------------------------------*/
+
+.product_section {
+	padding: 75px;
+}
+
+.owl-carousel .productname {
+	font-weight: 400;
+	font-size: 16px;
+	color: #1B1C1E;
+}
+
+.owl-carousel .price {
+	font-weight: 600;
+	font-size: 16px;
+	color: #1B1C1E;
+}
+
+.owl-carousel .shopping-1 {
+	float: right;
+	color: #521129;
+	position: relative;
+	right: 5px;
+}
+
+.owl-carousel a {
+	text-decoration: none;
+}
+
+.owl-carousel a span {
+	position: relative;
+	top: 3px;
+}
+
+
+.owl-next {
+
+	position: absolute !important;
+	right: 41px !important;
+	background: #d0b89c !important;
+	width: 60px !important;
+	height: 60px !important;
+	border-radius: 60px !important;
+	bottom: 287px !important;
+
+}
+
+.owl-carousel img {
+	width: 99% !important;
+}
+
+.owl-next span {
+
+	font-size: 30px;
+	position: relative;
+	top: -2px;
+	color: #521129;
+}
+
+.owl-prev {
+
+	position: absolute !important;
+	left: 41px !important;
+	background: #d0b89c !important;
+	width: 60px !important;
+	height: 60px !important;
+	border-radius: 60px !important;
+	bottom: 287px !important;
+
+}
+
+.owl-prev span {
+
+	font-size: 30px;
+	position: relative;
+	top: -2px;
+	color: #521129;
+}
+
+
+/*--------------------------------------------------------------
+    Footer
+--------------------------------------------------------------*/
+
+
+footer {
+	padding-top: 75px;
+}
+
+.appoinment_div {
+	background: url(../images/footer_bg.png) no-repeat;
+	padding: 150px 0px 50px 75px;
+	background-size: cover;
+}
+
+.appoinment_div h4 {
+	font-weight: 400;
+	font-size: 56px;
+	color: #DDC09E;
+	margin-bottom: 70px;
+}
+
+.appoinment_div span {
+	font-weight: 400;
+	font-size: 20px;
+	color: #DDC09E;
+	margin-right: 25px;
+
+}
+
+.btn-2 {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	border: 1px solid #d0b89c;
+	background-color: #d0b89c;
+}
+
+.btn-2:hover {
+	background-color: #4E1028;
+}
+
+.appoinment_div p {
+	font-size: 16px;
+	color: #d0b89c;
+	margin-top: 100px;
+}
+
+.appoinment_div p a {
+	color: #d0b89c;
+	text-decoration: none;
+
+}
+
+.contact_div {
+	padding: 150px 75px 50px 30px;
+
+}
+
+.contact_div .heading_p {
+	font-weight: 400;
+	font-size: 20px;
+	color: #DDC09E;
+
+}
+
+.contact_div p {
+
+	font-weight: 400;
+	font-size: 20px;
+
+}
+
+.socialmedia {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	border: 1px solid #d0b89c;
+	margin-top: 90px;
+}
+
+.socialmedia svg {
+	margin-top: 14px;
+}
+
+.fb:hover {
+	color: #385899;
+}
+
+.insta:hover {
+	color: #c73799;
+}
+
+.twitr:hover {
+	color: #1c96e8;
+}
+
+.lkdin:hover {
+	color: #0270ad;
+}
+
+
+
+/*--------------------------------------------------------------
+    Media Query
+--------------------------------------------------------------*/
+
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+
+
+	.banner_section h6 {
+		margin-top: 256px;
+	}
+
+
+	.fourth_border {
+		width: 26px;
+	}
+
+	.round_two {
+		left: 32px;
+	}
+
+
+	.round_three {
+		left: -11px;
+	}
+
+	.shpimage_bg {
+		height: 340px;
+	}
+
+
+}
+
+
+@media (min-width: 1026px) and (max-width: 1366px) {
+
+	.banner_section h6 {
+		margin-top: 256px;
+	}
+
+	.zoom_box {
+		margin-top: 90px;
+	}
+
+
+	.round_one {
+		width: 180px;
+		height: 180px;
+		left: -11px;
+		top: 44px;
+
+	}
+
+  .fourth_border {
+    width: 25px;
+  }
+
+	.round_two {
+		width: 180px;
+		height: 180px;
+		left: 45px;
+		top: 0px;
+	}
+
+	.fifth_border {
+		top: -2px;
+	}
+
+	.round_one img {
+		margin-top: 53px;
+	}
+
+	.round_two img {
+		margin-top: 61px;
+	}
+
+	.sixth_border {
+		top: 4px;
+	}
+
+	.round_three {
+		width: 180px;
+		height: 180px;
+		left: 8px;
+		top: 2px;
+	}
+
+	.round_three img {
+		margin-top: 56px;
+	}
+
+	.sevnth_border {
+		top: 2px;
+	}
+
+	.eighth_border {
+		top: 3px;
+	}
+
+	.nineth_border {
+		top: 1px
+	}
+
+	.shpimage_bg {
+		height: 320px;
+	}
+
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+
+	.banner_texts {
+		padding: 0px 100px;
+	}
+
+	.banner_section h6 {
+		margin-top: 250px;
+	}
+
+	.about_section {
+		padding: 150px 100px;
+	}
+
+	.Customsuits_section .text_sec {
+		padding: 50px 100px 50px 80px;
+	}
+
+	.Customsuits_section h2 {
+		margin-top: 40px;
+	}
+
+	.zoom_box {
+		padding: 50px;
+		margin-top: 100px;
+	}
+
+	.design_section {
+		padding: 0px 50px;
+	}
+
+	.third_border {
+		height: 100px;
+		width: 16%;
+	}
+
+	.round_one {
+		width: 200px;
+		height: 200px;
+		left: -11px;
+	}
+
+	.round_one img {
+		margin-top: 50px;
+	}
+
+	.finest_materialdiv {
+		padding: 20px 0px 0px 0px;
+	}
+
+	.fourth_border {
+		height: 0px;
+		width: 10px;
+		left: -3%;
+		top: 99px;
+	}
+
+	.paddingadjust_div {
+		padding-left: 30px;
+	}
+
+	.round_two {
+		width: 200px;
+		height: 200px;
+		left: 45px;
+		top: 0px;
+	}
+
+	.shpimage_bg {
+		height: 280px;
+	}
+
+	.fifth_border {
+		padding: 60px;
+		top: 0px;
+		width: 82%;
+	}
+
+	.round_two img {
+		margin-top: 60px;
+	}
+
+	.sixth_border {
+		top: 2px;
+		width: 67%;
+	}
+
+	.sevnth_border {
+		top: 2px;
+		width: 70%;
+		margin-left: 11%;
+	}
+
+	.round_three {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		top: 2px;
+	}
+
+	.round_three img {
+		margin-top: 56px;
+	}
+
+	.ourshop_div {
+		margin-top: 0px;
+	}
+
+	.eighth_border {
+		top: 5px;
+		margin-left: 11%;
+	}
+
+	.nineth_border {
+		top: 3px;
+	}
+
+
+	.Ourbrands_section {
+		padding: 75px 50px;
+	}
+
+	.Ourbrands_section img {
+		height: 100px;
+	}
+
+	.testimonial_section {
+		padding: 75px 50px;
+	}
+
+
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	.banner_texts {
+		padding: 0px 50px;
+	}
+
+	.banner_section h6 {
+		margin-top: 255px;
+	}
+
+	.about_section {
+		padding: 100px 60px;
+	}
+
+	.Customsuits_section .text_sec {
+		padding: 50px;
+	}
+
+	.Customsuits_section h2 {
+		margin-top: 0px;
+	}
+
+	.zoom_box {
+		padding: 50px;
+		margin-top: 60px;
+	}
+
+	.design_section {
+		padding: 0px 50px;
+	}
+
+	.third_border {
+		height: 100px;
+		width: 16%;
+	}
+
+	.round_one {
+		width: 200px;
+		height: 200px;
+		left: -11px;
+	}
+
+	.round_one img {
+		margin-top: 50px;
+	}
+
+	.finest_materialdiv {
+		padding: 20px 0px 0px 0px;
+	}
+
+	.fourth_border {
+		height: 0px;
+		width: 10px;
+		left: 89%;
+		top: -105px;
+	}
+
+	.paddingadjust_div {
+		padding-left: 30px;
+	}
+
+	.round_two {
+		width: 200px;
+		height: 200px;
+		left: 24px;
+		top: 0px;
+	}
+
+
+	.fifth_border {
+		padding: 60px;
+		top: 0px;
+		width: 82%;
+	}
+
+	.round_two img {
+		margin-top: 60px;
+	}
+
+	.sixth_border {
+		top: -55px;
+		width: 67%;
+	}
+
+	.sevnth_border {
+		top: -57px;
+		width: 70%;
+		margin-left: 11%;
+	}
+
+	.round_three {
+		width: 200px;
+		height: 200px;
+		left: -16px;
+		top: -57px;
+	}
+
+	.round_three img {
+		margin-top: 56px;
+	}
+
+	.ourshop_div {
+		margin-top: -52px;
+	}
+
+	.eighth_border {
+		top: -53px;
+		margin-left: 11%;
+	}
+
+	.nineth_border {
+		top: -54px;
+	}
+
+	.Ourbusiness_section {
+		padding: 50px;
+	}
+
+	.owl-prev {
+		left: -65px !important;
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 40px !important;
+		bottom: 215px !important;
+	}
+
+	.owl-prev span {
+		top: -5px;
+	}
+
+	.owl-next {
+		right: -65px !important;
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 40px !important;
+		bottom: 215px !important;
+	}
+
+	.owl-next span {
+		top: -5px;
+	}
+
+
+	.shpimage_bg {
+		height: 240px;
+	}
+
+
+	.shopping_heading {
+		font-size: 25px;
+	}
+
+	.overly_txt1 {
+		font-size: 25px;
+	}
+
+	.overly_txt2 {
+		font-size: 12px;
+	}
+
+	.overly_txt3 {
+		font-size: 12px;
+	}
+
+
+	.Ourbrands_section {
+		padding: 50px;
+		text-align: center;
+	}
+
+	.Ourbrands_section img {
+		height: 90px;
+	}
+
+
+	.testimonial_section {
+		padding: 50px;
+	}
+
+	.appoinment_div {
+		padding: 100px 15px 20px 75px;
+	}
+
+	.contact_div {
+		padding: 100px 75px 20px 30px;
+	}
+
+	.appoinment_div p {
+		margin-top: 40px;
+	}
+
+	.testimonial_section p {
+		font-size: 22px;
+	}
+
+	.socialmedia {
+		margin-top: 100px;
+	}
+
+
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+
+	.navbar {
+		padding: 20px 0px;
+		background: #00000078;
+	}
+
+
+	.navbar-light .navbar-toggler {
+		color: #000;
+		border-color: #fff;
+		background: #ffffff;
+	}
+
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+
+	.navbar-collapse {
+		text-align: center;
+		padding: 10px;
+	}
+
+	.navbar .navbar-nav .nav-item {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.logo {
+		height: 60px;
+	}
+
+
+	.shpimage_bg {
+		height: 400px;
+	}
+
+
+	.banner_section h6 {
+		margin-top: 120px;
+		font-size: 18px;
+	}
+
+
+	h1 {
+
+		font-size: 46px;
+		margin-bottom: 120px;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+
+	.banner_texts {
+		padding: 0px 15px;
+	}
+
+	.about_section {
+		padding: 50px 0px;
+	}
+
+	.design_section {
+		padding: 50px 0px;
+	}
+
+	.Ourbusiness_section {
+		padding: 0px;
+	}
+
+	.Customsuits_section .text_sec {
+
+		padding: 0px 15px 15px 15px;
+	}
+
+	.Customsuits_section h2 {
+		margin: 50px 0px;
+		text-align: center;
+	}
+
+	.round_three img {
+		margin-top: 55px;
+	}
+
+	.design_perfctiondiv p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.ourshop_div p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.finest_materialdiv {
+		padding: 0px;
+		margin-bottom: 100px;
+	}
+
+	.zoom_box p {
+		margin-top: 0px;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.zoom_box span {
+		font-size: 15px;
+	}
+
+	.btn-1 {
+		width: 45px;
+		height: 45px;
+	}
+
+	.btn-2 {
+		width: 45px;
+		height: 45px;
+	}
+
+	.angle-rght {
+		margin-top: 4px;
+	}
+
+	.round_one {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 0px auto;
+	}
+
+	.round_two {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 0px auto;
+	}
+
+	.round_three {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 0px auto;
+	}
+
+	.round_two img {
+		margin-top: 65px;
+	}
+
+	.design_perfctiondiv {
+		padding: 0px;
+		margin-bottom: 100px;
+
+	}
+
+	.Ourbrands_section img {
+		height: 70px;
+	}
+
+	.finest_materialdiv p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.round_one {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 0px auto;
+	}
+
+
+	.round_one img {
+		margin-top: 52px;
+	}
+
+	.Ourbrands_section {
+		padding: 50px 0px 0px 0pc;
+		text-align: center;
+	}
+
+	.testimonial_section {
+		padding: 50px 15px;
+	}
+
+	.testimonial_section p {
+		font-size: 20px;
+	}
+
+	.testimonial_section .text_name {
+		font-size: 18px;
+	}
+
+	.appoinment_div {
+		padding: 15px;
+	}
+
+	.contact_div {
+		padding: 15px;
+	}
+
+
+	.owl-prev {
+		left: -65px !important;
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 40px !important;
+		bottom: 145px !important;
+	}
+
+	.owl-prev span {
+		top: -5px;
+	}
+
+	.owl-next {
+		right: -65px !important;
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 40px !important;
+		bottom: 145px !important;
+	}
+
+	.owl-next span {
+		top: -5px;
+	}
+
+	.zoom_box {
+		width: 100%;
+		position: relative;
+		left: 0px;
+		padding: 15px;
+		margin-top: 0px;
+	}
+
+	.paddingadjust_div {
+		padding-left: 0px;
+	}
+
+	footer {
+		padding-top: 0px;
+	}
+
+	.appoinment_div h4 {
+		font-weight: 600;
+		font-size: 38px;
+		margin-bottom: 50px;
+	}
+
+	.socialmedia {
+		margin-top: 51px;
+	}
+
+	footer .copright {
+
+		font-size: 16px;
+		color: #d0b89c;
+		margin-top: 35px;
+		text-align: center;
+
+	}
+
+	.social_bg {
+		text-align: center;
+	}
+
+	footer .copright a {
+		color: #d0b89c;
+		text-decoration: none;
+
+	}
+
+
+}
+
+
+@media (max-width: 576px) {
+
+
+	.navbar {
+		padding: 20px 0px;
+	}
+
+	.banner_section {
+		background-position: center;
+	}
+
+	.navbar-light .navbar-toggler {
+		color: #000;
+		border-color: #fff;
+		background: #ffffff;
+	}
+
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+
+	.navbar-collapse {
+		text-align: center;
+		background: #00000078;
+		padding: 10px;
+	}
+
+	.navbar .navbar-nav .nav-item {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.logo {
+		height: 60px;
+	}
+
+	.banner_section h6 {
+		margin-top: 50px;
+		font-size: 18px;
+	}
+
+	h1 {
+
+		font-size: 46px;
+		margin-bottom: 30px;
+		font-weight: 600;
+	}
+
+	h2 {
+		font-size: 36px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.Ourbrands_section img {
+		height: 80px;
+		margin-bottom: 20px;
+	}
+
+	.banner_texts {
+		padding: 0px 15px;
+	}
+
+	.about_section {
+		padding: 50px 0px;
+	}
+
+	.design_section {
+		padding: 50px 0px;
+	}
+
+	.Ourbusiness_section {
+		padding: 0px;
+	}
+
+	.Customsuits_section .text_sec {
+
+		padding: 0px 15px 15px 15px;
+	}
+
+	.Customsuits_section h2 {
+		margin: 50px 0px;
+		text-align: center;
+	}
+
+	.round_three img {
+		margin-top: 55px;
+	}
+
+	.design_perfctiondiv p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.ourshop_div p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.finest_materialdiv {
+		padding: 30px 0px 0px 0px;
+	}
+
+	.shpimage_bg {
+		height: auto;
+    margin-bottom: 20px;
+	}
+
+	.zoom_box p {
+		margin-top: 0px;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	.zoom_box span {
+		font-size: 15px;
+	}
+
+	.btn-1 {
+		width: 45px;
+		height: 45px;
+	}
+
+	.btn-2 {
+		width: 45px;
+		height: 45px;
+	}
+
+	.angle-rght {
+		margin-top: 4px;
+	}
+
+	.round_one {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 0px auto;
+	}
+
+	.round_two {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 70px auto 0px auto;
+	}
+
+	.round_three {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 70px auto 0px auto;
+	}
+
+	.round_two img {
+		margin-top: 65px;
+	}
+
+	.design_perfctiondiv {
+
+		padding: 0px;
+
+	}
+
+	.finest_materialdiv p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.round_one {
+		width: 200px;
+		height: 200px;
+		left: 0px;
+		margin: 0px auto;
+	}
+
+
+	.round_one img {
+		margin-top: 52px;
+	}
+
+	.Ourbrands_section {
+		padding: 50px 0px 0px 0pc;
+		text-align: center;
+	}
+
+	.testimonial_section {
+		padding: 15px;
+	}
+
+	.testimonial_section p {
+		font-size: 20px;
+	}
+
+	.testimonial_section .text_name {
+		font-size: 18px;
+	}
+
+	.appoinment_div {
+		padding: 15px;
+	}
+
+	.contact_div {
+		padding: 15px;
+	}
+
+
+	.zoom_box {
+		width: 100%;
+		position: relative;
+		left: 0;
+		padding: 15px;
+		margin-top: 0px;
+	}
+
+	.paddingadjust_div {
+		padding-left: 0px;
+	}
+
+	.owl-prev {
+		left: -65px !important;
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 40px !important;
+		bottom: 145px !important;
+	}
+
+	.owl-prev span {
+		top: -5px;
+	}
+
+	.owl-next {
+		right: -65px !important;
+		width: 40px !important;
+		height: 40px !important;
+		border-radius: 40px !important;
+		bottom: 145px !important;
+	}
+
+	.owl-next span {
+		top: -5px;
+	}
+
+
+	footer {
+		padding-top: 0px;
+	}
+
+	.appoinment_div h4 {
+		font-weight: 600;
+		font-size: 38px;
+		margin-bottom: 50px;
+	}
+
+	.socialmedia {
+		margin-top: 51px;
+	}
+
+	footer .copright {
+
+		font-size: 16px;
+		color: #d0b89c;
+		margin-top: 35px;
+		text-align: center;
+
+	}
+
+	.social_bg {
+		text-align: center;
+	}
+
+	footer .copright a {
+		color: #d0b89c;
+		text-decoration: none;
+
+	}
+
+}
